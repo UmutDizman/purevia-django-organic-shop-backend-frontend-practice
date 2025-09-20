@@ -1,58 +1,67 @@
+
+body {
+  background-color: #F6E7D1;
+  
+} 
+
+
 /* navbar css here */
-body {background-color: #F6E7D1;} 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
 
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+header{
   display: flex;
-  background-color: #2E5939;
-  border-radius: 5px;
-}
-.nav li {margin: 0;}
-
-.nav li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: poppins, sans-serif;
-  font-size: 16px;
-}
-.nav li a:hover {
-    background-color: #04AA6D;
-    border-radius: 5px;
-}
-
-.nav .left {
-  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  z-index: 999;
   
 }
-.nav .right:last-child{
-    margin-right: 20px;
-
-}
-h1 {
-    color: #4CAF50;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-   
-}
-.main-content {
-    max-width: 1200px;
-    margin: 14 auto;
-    padding: 20px;
-    display: flex;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.main-content h1 {
-    font-size: 70px;
-    text-align: center;
-    
+header h1{
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
+nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-left: -5%;
+}
 
+nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  letter-spacing: 0.05rem;
+  color: #006241;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #048B5A;
+  
+}
+.btn-singin{
+  background-color: #a7a7a7;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-family: 'arial', sans-serif;
+}
+
+.btn-singin:hover {
+  background-color:white;
+}

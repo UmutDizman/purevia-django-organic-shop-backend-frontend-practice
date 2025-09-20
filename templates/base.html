@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    {% block extra_css %}{% endblock %}
     <title>PureVia</title>
 </head>
 <body>
 
 <!-- top navbar here -->
 
-    <div>
-        <ul class="nav">
-            <li class="left"><a href="#">Anasayfa</a></li>
-            <li class="right"><a href="#">Hesabım</a></li>
-            <li class="right"><a href="#">Sepetim</a></li>
-        </ul>
-    </div>
+  <div class="container">
+        <header>
+            <h1 class="logo">PureVia</h1>
+            <nav>
+                <a href="#">Anasayfa</a>
+                <a href="#">Ürünler</a>
+                <a href="#">Hakkımızda</a>
+                <a href="#">Sepetim Join</a>  
+            </nav>
+            <button class="btn-singin">Giriş yap</button>
+        </header>
+    </div>  
 
 {% block content %}
 

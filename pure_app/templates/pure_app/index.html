@@ -1,16 +1,27 @@
 {% extends "base.html" %}
-
+{% load static %}
+{% block extra_css %}
+   <link rel="stylesheet" href=" {% static 'pure_app/index.css' %} ">
+{% endblock %}
 {% block content %}
-<!-- main content here -->
 
+<!-- slider here -->
 
-<div class="main-content">
+<div class="slider">
    <img src="static/pure1.png" alt="PureVia Image">
-   <h1>yooouuoo</h1>
+   <h1 class="youu">yooouuoo</h1>
 </div>
 
-
-
+<!-- main content here -->
+<main>
+   <div class="content">
+      <div class="card" style="10rem">
+         <img src="static/pure1.png" alt="Product 1">
+         <h2>PureVia Stevia</h2>
+         <p>Doğal tatlandırıcı</p>
+      </div>
+   </div>
+</main>
 
 
 {% endblock content %}
